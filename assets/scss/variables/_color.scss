@@ -1,0 +1,45 @@
+/*
+|--------------------------------------------------------------------------
+| Color pallete variables
+|--------------------------------------------------------------------------
+*/
+$primary:         #ff592b;
+$secondary:       #ff592b;
+
+$black-primary:   #000000;
+$black-secondary: #232323;
+
+$white-primary:   #ffffff;
+$white-secondary: #ffffff;
+
+/*
+|--------------------------------------------------------------------------
+| Color pallete collection
+|--------------------------------------------------------------------------
+*/
+$color-pallete: (
+  primary: (
+    button-color: $primary,
+    color:        $primary,
+  ),
+  secondary: (
+    button-color: $secondary,
+    color:        $secondary,
+  ),
+  black-primary: (
+    button-color: $black-primary,
+    color:        $black-primary,
+  ),
+  black-secondary: (
+    button-color: $black-secondary,
+    color:        $black-secondary,
+  ),
+  white-primary: (
+    button-color: $white-primary,
+    color:        $white-primary,
+  ),
+  white-secondary: (
+    button-color: $white-secondary,
+    color:        $white-secondary,
+  ),
+);

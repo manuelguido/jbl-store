@@ -1,0 +1,18 @@
+@import "./variables/index.scss";
+@import "./background";
+@import "./button";
+@import "./typography";
+
+html,
+body {
+  box-sizing: border-box;
+  color: $black-primary;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100dvw;
+}
+
+body {
+  min-height: 100dvh;
+}

@@ -1,0 +1,12 @@
+@import "./variables/color";
+
+/*
+|--------------------------------------------------------------------------
+| Background color classes
+|--------------------------------------------------------------------------
+*/
+@each $color, $value in $color-pallete {
+  .bg-#{$color} {
+    background-color: map-get($value, "color");
+  }
+}

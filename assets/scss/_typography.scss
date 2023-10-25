@@ -1,0 +1,47 @@
+@import "./variables/index.scss";
+
+/*
+|--------------------------------------------------------------------------
+| Font size classes
+|--------------------------------------------------------------------------
+*/
+@each $size, $fontSize in $font-sizes {
+  .text-#{$size} {
+    font-size: $fontSize;
+
+    @media (max-width: 332px) {
+      font-size: $fontSize * 0.75;
+    }
+
+    @media (min-width: 332px) and (max-width: 576px) {
+      font-size: $fontSize * 0.8;
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+      font-size: $fontSize * 0.85;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      font-size: $fontSize * 0.9;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      font-size: $fontSize * 0.95;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: $fontSize * 1;
+    }
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Letter spacing
+|--------------------------------------------------------------------------
+*/
+@each $ls, $value in $letter-spacing {
+  .nf-ls-#{$ls} {
+    letter-spacing: $value !important;
+  }
+}

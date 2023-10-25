@@ -1,0 +1,39 @@
+@import "./variables/color";
+
+/*
+|--------------------------------------------------------------------------
+| Button
+|--------------------------------------------------------------------------
+*/
+.button {
+  align-content: center;
+  align-items: center;
+  border: 0 none;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 0;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  text-transform: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Button color classes
+|--------------------------------------------------------------------------
+*/
+@each $color, $value in $color-pallete {
+  .button-#{$color} {
+    background-color: map-get($value, "color");
+  }
+}
