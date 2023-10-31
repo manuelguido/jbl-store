@@ -13,18 +13,18 @@ export const useProductsStore = defineStore('products', {
           variants: [
             {
               name: "Teal",
-              asset: "jbl_flip_6/flip-6-teal.glb",
-              color_image: "jbl_flip_6/flip-6-teal.png",
+              asset: "flip-6-teal.glb",
+              color_image: "flip-6-teal.png",
             },
             {
               name: "Red",
-              asset: "jbl_flip_6/flip-6-red.glb",
-              color_image: "jbl_flip_6/flip-6-red.png",
+              asset: "flip-6-red.glb",
+              color_image: "flip-6-red.png",
             },
             {
               name: "Camo",
-              asset: "jbl_flip_6/flip-6-camo.glb",
-              color_image: "jbl_flip_6/flip-6-camo.png",
+              asset: "flip-6-camo.glb",
+              color_image: "flip-6-camo.png",
             },
           ],
         },
@@ -36,18 +36,18 @@ export const useProductsStore = defineStore('products', {
           variants: [
             {
               name: "Blue",
-              asset: "jbl_clip_4/clip-4-blue.glb",
-              color_image: "jbl_clip_4/clip-4-blue.png",
+              asset: "clip-4-blue.glb",
+              color_image: "clip-4-blue.png",
             },
             {
               name: "Grey Pink",
-              asset: "jbl_clip_4/clip-4-grey-pink.glb",
-              color_image: "jbl_clip_4/clip-4-grey-pink.png",
+              asset: "clip-4-grey-pink.glb",
+              color_image: "clip-4-grey-pink.png",
             },
             {
               name: "Camo",
-              asset: "jbl_clip_4/clip-4-camo.glb",
-              color_image: "jbl_clip_4/clip-4-camo.png",
+              asset: "clip-4-camo.glb",
+              color_image: "clip-4-camo.png",
             },
           ],
         },
