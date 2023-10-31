@@ -1,11 +1,20 @@
 <template>
   <div class="section-b">
     <div class="subsection">
-      <h1>Title</h1>
-      <h2>Model</h2>
+      <h1>JBL {{ store.selectedProduct.name }}</h1>
+    </div>
+    <div class="subsection">
+      <color-picker />
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+import { useProductsStore } from "@/store/jbl-products";
+import colorPicker from "./color-picker/index.vue";
+
+const store = useProductsStore();
+</script>
 
 <style lang="scss" scoped>
 .section-b {
@@ -13,7 +22,7 @@
   align-items: center;
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   background: rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
