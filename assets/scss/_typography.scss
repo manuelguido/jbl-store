@@ -41,7 +41,7 @@
 |--------------------------------------------------------------------------
 */
 @each $ls, $value in $letter-spacing {
-  .nf-ls-#{$ls} {
+  .text-ls-#{$ls} {
     letter-spacing: $value !important;
   }
 }
