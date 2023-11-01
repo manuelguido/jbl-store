@@ -9,9 +9,9 @@
 </template>
 
 <script lang="ts" setup>
-import { PropType } from "vue";
+import type { PropType } from "vue";
 import { defineProps } from "vue";
-import { ProductVariant } from "~/types/jbl-product";
+import type { ProductVariant } from "~/types/jbl-product";
 import { filename } from "pathe/utils";
 
 const props = defineProps({
