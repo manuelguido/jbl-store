@@ -4,7 +4,6 @@
       <AppLogo />
     </div>
     <div class="subsection"><asset-model /></div>
-    <div class="subsection">Color selection</div>
   </div>
 </template>
 
@@ -18,8 +17,7 @@ import assetModel from "./asset-model.vue";
   align-items: center;
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
-
+  justify-content: flex-start;
   background: #ffffff;
   box-sizing: border-box;
   height: 100dvh;
@@ -38,6 +36,8 @@ import assetModel from "./asset-model.vue";
 }
 
 .subsection:not(:first-child) {
+  align-items: center;
   justify-content: center;
+  height: 100%;
 }
 </style>
