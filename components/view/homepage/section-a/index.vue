@@ -3,10 +3,14 @@
     <div class="subsection">
       <AppLogo />
     </div>
-    <div class="subsection">Images</div>
+    <div class="subsection"><asset-model /></div>
     <div class="subsection">Color selection</div>
   </div>
 </template>
+
+<script setup lang="ts">
+import assetModel from "./asset-model.vue";
+</script>
 
 <style lang="scss" scoped>
 .section-a {
