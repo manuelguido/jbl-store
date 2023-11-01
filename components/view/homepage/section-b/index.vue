@@ -23,8 +23,7 @@ const store = useProductsStore();
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
-
-  background: rgba(0, 0, 0, 0.05);
+  background: #ffffff;
   box-sizing: border-box;
   height: 100dvh;
   padding: 2rem;

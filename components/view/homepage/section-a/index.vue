@@ -18,7 +18,7 @@ import assetModel from "./asset-model.vue";
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.9);
   box-sizing: border-box;
   height: 100dvh;
   padding: 2rem;
