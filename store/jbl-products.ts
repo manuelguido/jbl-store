@@ -13,17 +13,17 @@ export const useProductsStore = defineStore('products', {
           variants: [
             {
               name: "Teal",
-              asset: "flip-6-teal.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/flip-6-teal.glb",
               color_image: "flip-6-teal.png",
             },
             {
               name: "Red",
-              asset: "flip-6-red.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/flip-6-red.glb",
               color_image: "flip-6-red.png",
             },
             {
               name: "Camo",
-              asset: "flip-6-camo.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/flip-6-camo.glb",
               color_image: "flip-6-camo.png",
             },
           ],
@@ -36,17 +36,17 @@ export const useProductsStore = defineStore('products', {
           variants: [
             {
               name: "Blue",
-              asset: "clip-4-blue.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/clip-4-blue.glb",
               color_image: "clip-4-blue.png",
             },
             {
               name: "Grey Pink",
-              asset: "clip-4-grey-pink.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/clip-4-grey-pink.glb",
               color_image: "clip-4-grey-pink.png",
             },
             {
               name: "Camo",
-              asset: "clip-4-camo.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/clip-4-camo.glb",
               color_image: "clip-4-camo.png",
             },
           ],
@@ -59,17 +59,17 @@ export const useProductsStore = defineStore('products', {
           variants: [
             {
               name: "Black",
-              asset: "jbl_xtreme_3/xtreme-3-black.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/xtreme-3-black.glb",
               color_image: "jbl_xtreme_3/xtreme-3-black.png",
             },
             {
               name: "Blue",
-              asset: "jbl_xtreme_3/xtreme-3-blue.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/xtreme-3-blue.glb",
               color_image: "jbl_xtreme_3/xtreme-3-blue.png",
             },
             {
               name: "Camo",
-              asset: "jbl_xtreme_3/xtreme-3-camo.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/xtreme-3-camo.glb",
               color_image: "jbl_xtreme_3/xtreme-3-camo.png",
             },
           ],
