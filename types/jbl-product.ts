@@ -2,6 +2,7 @@ interface ProductVariant {
   name: string,
   asset: string
   color_image: string,
+  selected: boolean,
 }
 
 interface JBLProduct {
