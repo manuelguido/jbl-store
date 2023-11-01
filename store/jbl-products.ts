@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { JBLProduct } from '~/types/jbl-product'
+import type { JBLProduct } from '~/types/jbl-product';
 
 export const useProductsStore = defineStore('products', {
   state: () => (
