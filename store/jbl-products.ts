@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import type { JBLProduct } from '~/types/jbl-product';
+import type { JBLProduct, ProductVariant } from '~/types/jbl-product';
 
 export const useProductsStore = defineStore('products', {
   state: () => (
@@ -88,7 +88,23 @@ export const useProductsStore = defineStore('products', {
   ),
 
   getters: {
+    // Get all products
     getProducts: (state) => state.products,
+
+    // Get current selected product
     selectedProduct: (state) => state.products.filter(element => { return element.selected })[0],
+
+    // Get current selected variant of the selected product 
+    selectedProductVariant: (state) => (state.products.filter(element => {
+      return element.selected
+    })[0]).variants.filter(element => { return element.selected })[0],
+  },
+
+  actions: {
+    setSelectedVariant(selected: ProductVariant) {
+      this.selectedProduct.variants.forEach(variant => {
+        variant.selected = selected.name === variant.name
+      });
+    },
   },
 });

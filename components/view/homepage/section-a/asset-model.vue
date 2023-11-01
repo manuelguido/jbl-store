@@ -1,6 +1,6 @@
 <template>
   <model-viewer
-    src="https://manuelguido.dev/clip-4-blue.glb"
+    :src="store.selectedProductVariant.asset"
     ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
     alt="A 3D model of an astronaut"
     ar
@@ -9,6 +9,15 @@
   ></model-viewer>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
+import { useProductsStore } from "@/store/jbl-products";
 
+const store = useProductsStore();
 </script>
+
+<style scoped>
+model-viewer {
+  width: 100%;
+  height: 60%;
+}
+</style>
