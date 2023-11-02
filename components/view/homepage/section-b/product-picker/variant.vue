@@ -28,7 +28,9 @@ defineProps({
   },
 });
 
-const glob = import.meta.glob("@/assets/image/product-thumbnails/*.webp", { eager: true });
+const glob = import.meta.glob("@/assets/image/product-thumbnails/*.webp", {
+  eager: true,
+});
 const images = Object.fromEntries(
   Object.entries(glob).map(([key, value]: [string, any]) => [
     filename(key),
@@ -47,7 +49,8 @@ function selectProduct(product: JBLProduct) {
 .variant {
   align-items: center;
   border-radius: 8px;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -64,7 +67,7 @@ img {
   font-weight: 500;
 }
 
-.variant:not(.selected) .variant-name {
-  opacity: 0.4;
+.variant:not(.selected) {
+  opacity: 0.5;
 }
 </style>

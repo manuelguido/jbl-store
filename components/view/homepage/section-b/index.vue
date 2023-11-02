@@ -25,14 +25,22 @@ const store = useProductsStore();
 <style lang="scss" scoped>
 .section-b {
   align-items: center;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   background: #ffffff;
   box-sizing: border-box;
   height: 100dvh;
-  padding: 2rem;
-  width: 40dvw;
+  padding: 1rem; // Default padding for all screen sizes
+
+  @media screen and (min-width: 992px) {
+    width: 40dvw;
+    padding: 2rem; // Adjusted padding for larger screens
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 100dvw;
+  }
 }
 
 .subsection {
@@ -40,6 +48,6 @@ const store = useProductsStore();
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  padding: 0 !important;
+  padding: 0;
 }
 </style>

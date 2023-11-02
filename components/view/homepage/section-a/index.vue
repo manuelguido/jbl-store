@@ -20,7 +20,6 @@ import assetModel from "./asset-model.vue";
   background: rgba(0, 0, 0, 0.9);
   box-sizing: border-box;
   height: 100dvh;
-  width: 60dvw;
 }
 
 .logo-container {
@@ -38,5 +37,17 @@ import assetModel from "./asset-model.vue";
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .section-a {
+    width: 60dvw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section-a {
+    width: 100dvw;
+  }
 }
 </style>

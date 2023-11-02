@@ -17,6 +17,13 @@ export default defineComponent({});
 .homepage {
   display: flex;
   justify-content: space-between;
-  height: 100dvh;
+  min-height: 100dvh;
 }
+
+@media screen and (max-width: 992px) {
+  .homepage {
+    flex-direction: column;
+  }
+}
+
 </style>
