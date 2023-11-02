@@ -9,6 +9,7 @@ interface JBLProduct {
   id: number,
   name: string,
   price: number,
+  thumbnail: string
   selected: boolean,
   variants: ProductVariant[]
 }

@@ -9,6 +9,7 @@ export const useProductsStore = defineStore('products', {
           id: 1,
           name: "Flip 6",
           price: 129.95,
+          thumbnail: "flip-6.webp",
           selected: true,
           variants: [
             {
@@ -35,6 +36,7 @@ export const useProductsStore = defineStore('products', {
           id: 2,
           name: "Clip 4",
           price: 79.95,
+          thumbnail: "clip-4.webp",
           selected: false,
           variants: [
             {
@@ -61,6 +63,7 @@ export const useProductsStore = defineStore('products', {
           id: 3,
           name: "Xtreme 3",
           price: 279.95,
+          thumbnail: "xtreme-3.webp",
           selected: false,
           variants: [
             {
@@ -101,6 +104,12 @@ export const useProductsStore = defineStore('products', {
   },
 
   actions: {
+    setSelectedProduct(selected: JBLProduct) {
+      this.getProducts.forEach(product => {
+        product.selected = selected.name === product.name
+      });
+    },
+
     setSelectedVariant(selected: ProductVariant) {
       this.selectedProduct.variants.forEach(variant => {
         variant.selected = selected.name === variant.name

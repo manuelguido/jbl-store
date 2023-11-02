@@ -2,7 +2,11 @@
   <div class="section-b">
     <div class="subsection">
       <h1 class="text-h1 text-black-primary">
-        <span class="text-primary">JBL </span>{{ store.selectedProduct.name }}</h1>
+        <span class="text-primary">JBL </span>{{ store.selectedProduct.name }}
+      </h1>
+    </div>
+    <div class="subsection">
+      <product-picker />
     </div>
     <div class="subsection">
       <color-picker />
@@ -13,6 +17,7 @@
 <script lang="ts" setup>
 import { useProductsStore } from "@/store/jbl-products";
 import colorPicker from "./color-picker/index.vue";
+import productPicker from "./product-picker/index.vue";
 
 const store = useProductsStore();
 </script>
