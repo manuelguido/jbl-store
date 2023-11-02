@@ -45,3 +45,14 @@
     letter-spacing: $value !important;
   }
 }
+
+/*
+|--------------------------------------------------------------------------
+| Text color
+|--------------------------------------------------------------------------
+*/
+@each $color, $value in $color-pallete {
+  .text-#{$color} {
+    color: map-get($value, "color") !important;
+  }
+}
