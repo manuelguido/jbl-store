@@ -1,7 +1,8 @@
 <template>
   <div class="section-b">
     <div class="subsection">
-      <h1 class="text-h1 text-primary">JBL {{ store.selectedProduct.name }}</h1>
+      <h1 class="text-h1 text-black-primary">
+        <span class="text-primary">JBL </span>{{ store.selectedProduct.name }}</h1>
     </div>
     <div class="subsection">
       <color-picker />
