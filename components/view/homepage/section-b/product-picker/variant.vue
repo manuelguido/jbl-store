@@ -28,7 +28,7 @@ defineProps({
   },
 });
 
-const glob = import.meta.glob("@/assets/image/product-thumbnails/*.webp", {
+const glob = import.meta.glob("@/assets/image/product-thumbnails/*.png", {
   eager: true,
 });
 const images = Object.fromEntries(

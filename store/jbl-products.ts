@@ -9,7 +9,7 @@ export const useProductsStore = defineStore('products', {
           id: 1,
           name: "Flip 6",
           price: 129.95,
-          thumbnail: "flip-6.webp",
+          thumbnail: "flip-6.png",
           selected: true,
           variants: [
             {
@@ -54,7 +54,7 @@ export const useProductsStore = defineStore('products', {
           id: 2,
           name: "Clip 4",
           price: 79.95,
-          thumbnail: "clip-4.webp",
+          thumbnail: "clip-4.png",
           selected: false,
           variants: [
             {
@@ -96,10 +96,10 @@ export const useProductsStore = defineStore('products', {
           ],
         },
         {
-          id: 3,
+          id: 4,
           name: "Xtreme 3",
           price: 279.95,
-          thumbnail: "xtreme-3.webp",
+          thumbnail: "xtreme-3.png",
           selected: false,
           variants: [
             {
