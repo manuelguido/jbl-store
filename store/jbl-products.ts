@@ -96,6 +96,63 @@ export const useProductsStore = defineStore('products', {
           ],
         },
         {
+          id: 3,
+          name: "Go 3",
+          price: 49.95,
+          thumbnail: "go-3.png",
+          selected: false,
+          variants: [
+            {
+              name: "Black",
+              asset: "https://jblstore.manuelguido.dev/_models/go-3/go-3-black.glb",
+              color_image: "go-3-black.png",
+              selected: true,
+            },
+            {
+              name: "Blue",
+              asset: "https://jblstore.manuelguido.dev/_models/go-3/go-3-blue.glb",
+              color_image: "go-3-blue.png",
+              selected: false,
+            },
+            {
+              name: "Teal",
+              asset: "https://jblstore.manuelguido.dev/_models/go-3/go-3-teal.glb",
+              color_image: "go-3-teal.png",
+              selected: false,
+            },
+            {
+              name: "Dark Grey",
+              asset: "https://jblstore.manuelguido.dev/_models/go-3/go-3-dark-grey.glb",
+              color_image: "go-3-dark-grey.png",
+              selected: false,
+            },
+            {
+              name: "Red",
+              asset: "https://jblstore.manuelguido.dev/_models/go-3/go-3-red.glb",
+              color_image: "go-3-red.png",
+              selected: false,
+            },
+            {
+              name: "Pink",
+              asset: "https://jblstore.manuelguido.dev/_models/go-3/go-3-pink.glb",
+              color_image: "go-3-pink.png",
+              selected: false,
+            },
+            {
+              name: "Green",
+              asset: "https://jblstore.manuelguido.dev/_models/go-3/go-3-green.glb",
+              color_image: "go-3-green.png",
+              selected: false,
+            },
+            {
+              name: "Camo",
+              asset: "https://jblstore.manuelguido.dev/_models/go-3/go-3-camo.glb",
+              color_image: "go-3-camo.png",
+              selected: false,
+            },
+          ],
+        },
+        {
           id: 4,
           name: "Xtreme 3",
           price: 279.95,
