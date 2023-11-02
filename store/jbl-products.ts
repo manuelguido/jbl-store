@@ -13,20 +13,38 @@ export const useProductsStore = defineStore('products', {
           selected: true,
           variants: [
             {
-              name: "Teal",
-              asset: "https://jblstore.manuelguido.dev/_models/flip-6-teal.glb",
-              color_image: "flip-6-teal.png",
+              name: "Black",
+              asset: "https://jblstore.manuelguido.dev/_models/flip-6/flip-6-black.glb",
+              color_image: "flip-6-black.png",
               selected: true,
             },
             {
+              name: "Blue",
+              asset: "https://jblstore.manuelguido.dev/_models/flip-6/flip-6-blue.glb",
+              color_image: "flip-6-blue.png",
+              selected: false,
+            },
+            {
+              name: "Teal",
+              asset: "https://jblstore.manuelguido.dev/_models/flip-6/flip-6-teal.glb",
+              color_image: "flip-6-teal.png",
+              selected: false,
+            },
+            {
               name: "Red",
-              asset: "https://jblstore.manuelguido.dev/_models/flip-6-red.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/flip-6/flip-6-red.glb",
               color_image: "flip-6-red.png",
               selected: false,
             },
             {
+              name: "Grey",
+              asset: "https://jblstore.manuelguido.dev/_models/flip-6/flip-6-grey.glb",
+              color_image: "flip-6-grey.png",
+              selected: false,
+            },
+            {
               name: "Camo",
-              asset: "https://jblstore.manuelguido.dev/_models/flip-6-camo.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/flip-6/flip-6-camo.glb",
               color_image: "flip-6-camo.png",
               selected: false,
             },
