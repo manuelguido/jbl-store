@@ -1,7 +1,7 @@
 <template>
   <div class="section-b">
     <div class="subsection">
-      <h1>JBL {{ store.selectedProduct.name }}</h1>
+      <h1 class="text-h1 text-primary">JBL {{ store.selectedProduct.name }}</h1>
     </div>
     <div class="subsection">
       <color-picker />
@@ -18,11 +18,10 @@ const store = useProductsStore();
 
 <style lang="scss" scoped>
 .section-b {
-  // Flexbox
   align-items: center;
   display: inline-flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   background: #ffffff;
   box-sizing: border-box;
   height: 100dvh;
@@ -31,11 +30,10 @@ const store = useProductsStore();
 }
 
 .subsection {
-  // Flexbox
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
   width: 100%;
+  padding: 0 !important;
 }
 </style>

@@ -1,10 +1,14 @@
 <template>
-  <span class="variant" @click="selectVariant(variant)">
+  <span
+    class="variant"
+    :class="{ selected: variant.selected }"
+    @click="selectVariant(variant)"
+  >
     <img
       :src="images[filename(variant.color_image)]"
       :alt="`Image color ${variant.color_image}`"
     />
-    <span>{{ variant.name }}</span>
+    <span class="variant-name text-h6">{{ variant.name }}</span>
   </span>
 </template>
 
@@ -37,17 +41,37 @@ function selectVariant(variant: ProductVariant) {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "@/assets/scss/variables/index.scss";
+
 .variant {
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.variant.selected {
+  background: $black-primary;
+  color: $white-primary;
 }
 
 img {
   border-radius: 100px;
   height: 2.5rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.variant-name {
+  font-weight: 500;
+}
+
+.variant:not(.selected) .variant-name {
+  opacity: 0.6;
 }
 </style>

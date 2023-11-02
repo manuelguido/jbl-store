@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>{{ title }}</h4>
+    <h5 class="text-h5">{{ title }}</h5>
 
     <div class="variant-container">
       <color-picker-variant
