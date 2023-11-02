@@ -24,9 +24,10 @@ import assetModel from "./asset-model.vue";
 }
 
 .logo-container {
-  left: 1rem;
+  left: 0;
   position: absolute;
-  top: 1rem;
+  padding: 1rem 0 0 1rem;
+  top: 0;
   width: 100%;
   z-index: 1080;
 }
