@@ -58,20 +58,38 @@ export const useProductsStore = defineStore('products', {
           selected: false,
           variants: [
             {
-              name: "Blue",
-              asset: "https://jblstore.manuelguido.dev/_models/clip-4-blue.glb",
-              color_image: "clip-4-blue.png",
+              name: "Black",
+              asset: "https://jblstore.manuelguido.dev/_models/clip-4/clip-4-black.glb",
+              color_image: "clip-4-black.png",
               selected: true,
             },
             {
+              name: "Blue",
+              asset: "https://jblstore.manuelguido.dev/_models/clip-4/clip-4-blue.glb",
+              color_image: "clip-4-blue.png",
+              selected: false,
+            },
+            {
+              name: "Pink",
+              asset: "https://jblstore.manuelguido.dev/_models/clip-4/clip-4-pink.glb",
+              color_image: "clip-4-pink.png",
+              selected: false,
+            },
+            {
               name: "Grey Pink",
-              asset: "https://jblstore.manuelguido.dev/_models/clip-4-grey-pink.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/clip-4/clip-4-grey-pink.glb",
               color_image: "clip-4-grey-pink.png",
               selected: false,
             },
             {
+              name: "Red",
+              asset: "https://jblstore.manuelguido.dev/_models/clip-4/clip-4-red.glb",
+              color_image: "clip-4-red.png",
+              selected: false,
+            },
+            {
               name: "Camo",
-              asset: "https://jblstore.manuelguido.dev/_models/clip-4-camo.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/clip-4/clip-4-camo.glb",
               color_image: "clip-4-camo.png",
               selected: false,
             },
