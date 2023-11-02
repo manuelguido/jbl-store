@@ -1,6 +1,6 @@
 <template>
   <div class="section-a">
-    <div class="subsection">
+    <div class="logo-container">
       <AppLogo />
     </div>
     <div class="subsection"><asset-model /></div>
@@ -13,7 +13,6 @@ import assetModel from "./asset-model.vue";
 
 <style lang="scss" scoped>
 .section-a {
-  // Flex
   align-items: center;
   display: inline-flex;
   flex-direction: column;
@@ -21,21 +20,20 @@ import assetModel from "./asset-model.vue";
   background: rgba(0, 0, 0, 0.9);
   box-sizing: border-box;
   height: 100dvh;
-  padding: 2rem;
   width: 60dvw;
+}
+
+.logo-container {
+  left: 1rem;
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+  z-index: 1080;
 }
 
 .subsection {
   display: flex;
   width: 100%;
-}
-
-.subsection:first-child {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.subsection:not(:first-child) {
   align-items: center;
   justify-content: center;
   height: 100%;

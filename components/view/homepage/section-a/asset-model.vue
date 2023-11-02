@@ -18,6 +18,6 @@ const store = useProductsStore();
 <style scoped>
 model-viewer {
   width: 100%;
-  height: 60%;
+  height: 100%;
 }
 </style>
