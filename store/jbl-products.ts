@@ -86,19 +86,19 @@ export const useProductsStore = defineStore('products', {
           variants: [
             {
               name: "Black",
-              asset: "https://jblstore.manuelguido.dev/_models/xtreme-3-black.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/xtreme-3/xtreme-3-black.glb",
               color_image: "jbl_xtreme_3/xtreme-3-black.png",
               selected: true,
             },
             {
               name: "Blue",
-              asset: "https://jblstore.manuelguido.dev/_models/xtreme-3-blue.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/xtreme-3/xtreme-3-blue.glb",
               color_image: "jbl_xtreme_3/xtreme-3-blue.png",
               selected: false,
             },
             {
               name: "Camo",
-              asset: "https://jblstore.manuelguido.dev/_models/xtreme-3-camo.glb",
+              asset: "https://jblstore.manuelguido.dev/_models/xtreme-3/xtreme-3-camo.glb",
               color_image: "jbl_xtreme_3/xtreme-3-camo.png",
               selected: false,
             },
