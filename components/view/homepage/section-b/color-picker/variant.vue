@@ -28,7 +28,7 @@ defineProps({
   },
 });
 
-const glob = import.meta.glob("@/assets/image/*.png", { eager: true });
+const glob = import.meta.glob("@/assets/image/color-thumbnails/*.png", { eager: true });
 const images = Object.fromEntries(
   Object.entries(glob).map(([key, value]: [string, any]) => [
     filename(key),
