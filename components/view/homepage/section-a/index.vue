@@ -26,7 +26,7 @@ import assetModel from "./asset-model.vue";
 .logo-container {
   left: 0;
   position: absolute;
-  padding: 1rem 0 0 1rem;
+  padding: 2rem 0 0 2rem;
   top: 0;
   width: 100%;
   z-index: 1080;
