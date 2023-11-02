@@ -34,7 +34,7 @@ const store = useProductsStore();
   padding: 1rem; // Default padding for all screen sizes
 
   @media screen and (min-width: 992px) {
-    width: 40dvw;
+    width: 50dvw;
     padding: 2rem; // Adjusted padding for larger screens
   }
 

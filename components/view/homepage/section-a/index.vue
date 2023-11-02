@@ -41,7 +41,7 @@ import assetModel from "./asset-model.vue";
 
 @media screen and (min-width: 992px) {
   .section-a {
-    width: 60dvw;
+    width: 50dvw;
   }
 }
 

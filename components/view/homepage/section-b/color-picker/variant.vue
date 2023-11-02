@@ -8,7 +8,7 @@
       :src="images[filename(variant.color_image)]"
       :alt="`Image color ${variant.color_image}`"
     />
-    <span class="variant-name text-h6">{{ variant.name }}</span>
+    <span class="variant-name text-h7">{{ variant.name }}</span>
   </span>
 </template>
 
