@@ -4,7 +4,9 @@
       <h1 class="text-h1 text-black-primary">
         <span class="text-primary">JBL </span>{{ store.selectedProduct.name }}
       </h1>
-      <h2 class="text-h2 text-black-primary">${{ store.selectedProduct.price }}</h2>
+      <h2 class="text-h2 text-black-primary">
+        ${{ store.selectedProduct.price }}
+      </h2>
     </div>
     <div class="subsection">
       <product-picker />
@@ -12,6 +14,8 @@
     <div class="subsection">
       <color-picker />
     </div>
+
+    <credits-footer />
   </div>
 </template>
 
@@ -20,6 +24,7 @@ import { useOptionsStore } from "@/store/options";
 import { useProductsStore } from "@/store/jbl-products";
 import colorPicker from "./color-picker/index.vue";
 import productPicker from "./product-picker/index.vue";
+import creditsFooter from "./credits-footer.vue";
 
 const store = useProductsStore();
 const optionsStore = useOptionsStore();
@@ -27,6 +32,7 @@ const optionsStore = useOptionsStore();
 
 <style lang="scss" scoped>
 .section-b {
+  position: relative;
   align-items: center;
   display: flex;
   flex-direction: column;

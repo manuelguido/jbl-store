@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="color-picker">
     <h5 class="text-h5">{{ title }}</h5>
 
     <div class="variant-container">
@@ -21,6 +21,10 @@ const title = "Select your style";
 </script>
 
 <style scoped>
+.color-picker {
+  margin-bottom: 3rem;
+}
+
 .variant-container {
   display: flex;
   gap: 1rem;
