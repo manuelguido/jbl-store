@@ -53,7 +53,7 @@ function selectVariant(variant: ProductVariant) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-grow: 1;
+  flex-grow: 0;
   padding: 1rem;
 }
 

@@ -54,6 +54,7 @@ function selectProduct(product: JBLProduct) {
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  flex-grow: 0;
   justify-content: center;
   padding: 1rem;
 }

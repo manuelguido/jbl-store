@@ -23,9 +23,10 @@ const title = "Select your style";
 <style scoped>
 .variant-container {
   display: flex;
-  column-gap: 1rem;
+  gap: 1rem;
   justify-content: flex-start;
   flex-direction: row;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 </style>
