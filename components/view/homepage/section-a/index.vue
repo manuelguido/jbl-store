@@ -60,7 +60,7 @@ const store = useOptionsStore();
   }
 
   .section-a:not(.full-size) {
-    width: 50dvw;
+    width: 60dvw;
   }
 
   .section-a.full-size {

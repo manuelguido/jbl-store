@@ -44,7 +44,7 @@ const optionsStore = useOptionsStore();
   .section-b:not(.hidden) {
     height: 100dvh;
     padding: 2rem; // Adjusted padding for larger screens
-    width: 50dvw;
+    width: 40dvw;
   }
   .section-b.hidden {
     width: 0;
