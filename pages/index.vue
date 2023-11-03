@@ -7,10 +7,16 @@
   <!-- /.Homepage -->
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({});
+<script setup lang="ts">
+useHead({
+  title: "JBL Store",
+  meta: [
+    {
+      name: "description",
+      content: "JBL Store with 3D models. Developed by Manuel Guido.",
+    },
+  ],
+});
 </script>
 
 <style lang="scss" scoped>
@@ -25,5 +31,4 @@ export default defineComponent({});
     flex-direction: column;
   }
 }
-
 </style>
