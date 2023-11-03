@@ -8,7 +8,7 @@
       :src="images[filename(variant.color_image)]"
       :alt="`Image color ${variant.color_image}`"
     />
-    <span class="variant-name text-h6">{{ variant.name }}</span>
+    <span class="variant-name text-h7">{{ variant.name }}</span>
   </span>
 </template>
 
@@ -28,7 +28,7 @@ defineProps({
   },
 });
 
-const glob = import.meta.glob("@/assets/image/*.png", { eager: true });
+const glob = import.meta.glob("@/assets/image/color-thumbnails/*.png", { eager: true });
 const images = Object.fromEntries(
   Object.entries(glob).map(([key, value]: [string, any]) => [
     filename(key),
@@ -53,7 +53,7 @@ function selectVariant(variant: ProductVariant) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-grow: 1;
+  flex-grow: 0;
   padding: 1rem;
 }
 

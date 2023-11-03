@@ -1,9 +1,12 @@
 <template>
-  <div class="section-b">
+  <div class="section-b" :class="{ hidden: optionsStore.getFullSize }">
     <div class="subsection">
       <h1 class="text-h1 text-black-primary">
         <span class="text-primary">JBL </span>{{ store.selectedProduct.name }}
       </h1>
+      <h2 class="text-h2 text-black-primary">
+        ${{ store.selectedProduct.price }}
+      </h2>
     </div>
     <div class="subsection">
       <product-picker />
@@ -11,35 +14,47 @@
     <div class="subsection">
       <color-picker />
     </div>
+
+    <credits-footer />
   </div>
 </template>
 
 <script lang="ts" setup>
+import { useOptionsStore } from "@/store/options";
 import { useProductsStore } from "@/store/jbl-products";
 import colorPicker from "./color-picker/index.vue";
 import productPicker from "./product-picker/index.vue";
+import creditsFooter from "./credits-footer.vue";
 
 const store = useProductsStore();
+const optionsStore = useOptionsStore();
 </script>
 
 <style lang="scss" scoped>
 .section-b {
+  position: relative;
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background: #ffffff;
   box-sizing: border-box;
-  height: 100dvh;
-  padding: 1rem; // Default padding for all screen sizes
-
-  @media screen and (min-width: 992px) {
-    width: 40dvw;
-    padding: 2rem; // Adjusted padding for larger screens
-  }
+  transition: 0.5s all;
 
   @media screen and (max-width: 992px) {
     width: 100dvw;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-b:not(.hidden) {
+    height: 100dvh;
+    padding: 2rem; // Adjusted padding for larger screens
+    width: 40dvw;
+  }
+  .section-b.hidden {
+    width: 0;
   }
 }
 
