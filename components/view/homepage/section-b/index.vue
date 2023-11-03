@@ -4,6 +4,7 @@
       <h1 class="text-h1 text-black-primary">
         <span class="text-primary">JBL </span>{{ store.selectedProduct.name }}
       </h1>
+      <h2 class="text-h2 text-black-primary">${{ store.selectedProduct.price }}</h2>
     </div>
     <div class="subsection">
       <product-picker />
@@ -29,7 +30,7 @@ const optionsStore = useOptionsStore();
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background: #ffffff;
   box-sizing: border-box;
   transition: 0.5s all;
