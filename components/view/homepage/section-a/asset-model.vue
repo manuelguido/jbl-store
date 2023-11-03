@@ -1,7 +1,7 @@
 <template>
   <model-viewer
     :src="store.selectedProductVariant.asset"
-    ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+    :ios-src="store.selectedProductVariant.asset_ios"
     alt="A 3D model of an astronaut"
     ar
     auto-rotate
