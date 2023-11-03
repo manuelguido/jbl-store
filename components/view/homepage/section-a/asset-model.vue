@@ -18,6 +18,17 @@ const store = useProductsStore();
 <style scoped>
 model-viewer {
   width: 100%;
-  height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  model-viewer {
+    height: 100dvh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  model-viewer {
+    height: 70dvh;
+  }
 }
 </style>

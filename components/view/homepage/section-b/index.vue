@@ -1,5 +1,5 @@
 <template>
-  <div class="section-b">
+  <div class="section-b" :class="{ hidden: optionsStore.getFullSize }">
     <div class="subsection">
       <h1 class="text-h1 text-black-primary">
         <span class="text-primary">JBL </span>{{ store.selectedProduct.name }}
@@ -15,11 +15,13 @@
 </template>
 
 <script lang="ts" setup>
+import { useOptionsStore } from "@/store/options";
 import { useProductsStore } from "@/store/jbl-products";
 import colorPicker from "./color-picker/index.vue";
 import productPicker from "./product-picker/index.vue";
 
 const store = useProductsStore();
+const optionsStore = useOptionsStore();
 </script>
 
 <style lang="scss" scoped>
@@ -30,16 +32,22 @@ const store = useProductsStore();
   justify-content: center;
   background: #ffffff;
   box-sizing: border-box;
-  height: 100dvh;
-  padding: 1rem; // Default padding for all screen sizes
-
-  @media screen and (min-width: 992px) {
-    width: 50dvw;
-    padding: 2rem; // Adjusted padding for larger screens
-  }
+  transition: 0.5s all;
 
   @media screen and (max-width: 992px) {
     width: 100dvw;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-b:not(.hidden) {
+    height: 100dvh;
+    padding: 2rem; // Adjusted padding for larger screens
+    width: 50dvw;
+  }
+  .section-b.hidden {
+    width: 0;
   }
 }
 
